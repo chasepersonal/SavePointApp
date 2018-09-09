@@ -1,0 +1,18 @@
+.login-container {
+  height: 200px;
+  width: 400px;
+  margin: 200px auto;
+  float: none;
+}
+
+.title-center {
+  margin: 0 140px auto;
+}
+
+.form-center {
+  margin: 0 100px auto;
+}
+
+.button-center {
+  margin: 0 150px auto;
+}

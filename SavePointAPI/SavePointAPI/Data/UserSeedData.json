@@ -1,0 +1,222 @@
+[
+    {
+        "Username": "magna",
+        "FirstName": "Holcomb",
+        "LastName": "Palmer",
+        "Gender": "male",
+        "DateOfBirth": "1965-01-03",
+        "Password": "password",
+        "Created": "2017-02-24",
+        "LastActive": "2017-02-24",
+        "Summary": "Commodo ullamco aliqua commodo anim veniam anim reprehenderit laborum ex nulla nostrud. Minim excepteur laboris et amet sunt aute sit cupidatat dolore sunt. Est ex eiusmod proident do amet laborum laboris non sint sit laboris aliquip do. Ex pariatur nostrud nulla sunt tempor sit velit ullamco elit dolore. Elit ut sit quis enim nostrud incididunt nulla.\r\n",
+        "FavoriteGeneres": "Cupidatat sit Lorem quis deserunt ullamco elit id incididunt.",
+        "FavoriteGames": "Enim minim duis laboris ipsum Lorem labore aliquip ad non est.",
+        "City": "Chamberino",
+        "State": "South Dakota",
+        "ZipCode": 46250,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/men/13.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "est",
+        "FirstName": "Brooks",
+        "LastName": "Mcdonald",
+        "Gender": "male",
+        "DateOfBirth": "1979-09-12",
+        "Password": "password",
+        "Created": "2017-04-03",
+        "LastActive": "2017-04-03",
+        "Summary": "Ad adipisicing duis est ad minim nostrud ad non culpa. Commodo quis aute laboris aliqua consequat ullamco voluptate laborum occaecat culpa elit sit incididunt aliqua. Id excepteur mollit fugiat Lorem elit et ex qui proident laborum ullamco sunt esse. Consequat adipisicing deserunt nulla fugiat aute labore sunt.\r\n",
+        "FavoriteGeneres": "Labore quis esse voluptate consectetur anim culpa duis dolore proident nulla labore commodo voluptate laborum.",
+        "FavoriteGames": "Ipsum eu anim Lorem duis.",
+        "City": "Munjor",
+        "State": "Pennsylvania",
+        "ZipCode": 96238,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/men/9.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "ipsum",
+        "FirstName": "Hendrix",
+        "LastName": "Douglas",
+        "Gender": "male",
+        "DateOfBirth": "1977-12-10",
+        "Password": "password",
+        "Created": "2017-06-10",
+        "LastActive": "2017-06-10",
+        "Summary": "Ea amet ullamco ex Lorem laboris ut et. Velit anim eu nulla ea pariatur voluptate magna enim est. Veniam eu occaecat consequat dolor exercitation est id labore non magna dolor nisi. Incididunt ex incididunt commodo sint cillum sunt cillum officia consectetur reprehenderit est. Officia ullamco sunt cupidatat fugiat in.\r\n",
+        "FavoriteGeneres": "Ipsum reprehenderit do mollit excepteur cillum in deserunt est in quis aliqua sit reprehenderit.",
+        "FavoriteGames": "Non excepteur enim amet et sint elit.",
+        "City": "Mammoth",
+        "State": "Northern Mariana Islands",
+        "ZipCode": 39247,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/men/18.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "ex",
+        "FirstName": "Goodwin",
+        "LastName": "Rivas",
+        "Gender": "male",
+        "DateOfBirth": "1965-02-26",
+        "Password": "password",
+        "Created": "2017-08-12",
+        "LastActive": "2017-08-12",
+        "Summary": "Nostrud non ea voluptate occaecat esse laborum aliqua officia ex officia pariatur magna consectetur. Nisi labore ad laboris laborum enim enim sit. Ullamco ea nulla eu officia fugiat consectetur fugiat nisi. Ullamco irure dolor amet consectetur aliqua amet pariatur. Veniam sit sit tempor nulla pariatur commodo cupidatat exercitation enim cillum.\r\n",
+        "FavoriteGeneres": "Eiusmod duis exercitation commodo ad amet dolor Lorem veniam.",
+        "FavoriteGames": "Magna minim irure aliqua mollit amet ullamco.",
+        "City": "Condon",
+        "State": "Arkansas",
+        "ZipCode": 84374,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/men/36.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "sint",
+        "FirstName": "Martinez",
+        "LastName": "Petersen",
+        "Gender": "male",
+        "DateOfBirth": "1991-03-19",
+        "Password": "password",
+        "Created": "2017-03-06",
+        "LastActive": "2017-03-06",
+        "Summary": "Enim aliqua ullamco deserunt pariatur aliquip cupidatat sit aute est ex ullamco. Officia et excepteur commodo veniam officia aliquip pariatur labore sit minim aute. Tempor cupidatat consectetur laboris dolore labore qui ipsum ipsum nulla culpa.\r\n",
+        "FavoriteGeneres": "Ut exercitation quis ipsum tempor esse deserunt.",
+        "FavoriteGames": "Qui voluptate mollit ad ut deserunt adipisicing anim et officia velit exercitation sit.",
+        "City": "Websterville",
+        "State": "New Jersey",
+        "ZipCode": 39450,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/men/56.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "commodo",
+        "FirstName": "Autumn",
+        "LastName": "Davidson",
+        "Gender": "female",
+        "DateOfBirth": "1998-11-17",
+        "Password": "password",
+        "Created": "2017-08-20",
+        "LastActive": "2017-08-20",
+        "Summary": "Nisi id tempor sit labore labore aliqua ex laborum sunt adipisicing. Labore ut ex ut duis incididunt officia deserunt consequat exercitation culpa cupidatat. Dolore consectetur non Lorem fugiat nulla ipsum amet proident. Ipsum enim consequat magna tempor ex deserunt aliqua do ad elit sit aute. Excepteur incididunt consequat laboris veniam duis in nulla ad adipisicing nostrud.\r\n",
+        "FavoriteGeneres": "Et nulla excepteur reprehenderit velit laborum tempor qui pariatur.",
+        "FavoriteGames": "Lorem non ex ipsum fugiat ipsum duis nisi enim magna aute.",
+        "City": "Bynum",
+        "State": "Northern Mariana Islands",
+        "ZipCode": 38054,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/women/9.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "deserunt",
+        "FirstName": "Clara",
+        "LastName": "Brock",
+        "Gender": "female",
+        "DateOfBirth": "1967-12-04",
+        "Password": "password",
+        "Created": "2017-03-22",
+        "LastActive": "2017-03-22",
+        "Summary": "Enim culpa sunt adipisicing est eiusmod Lorem fugiat amet aliqua non mollit. Consequat sint et officia ex cupidatat occaecat mollit exercitation nisi voluptate. Nisi in culpa reprehenderit amet duis voluptate laboris velit in cillum ad. Commodo aute id reprehenderit ad quis ut. Duis officia cillum fugiat eu pariatur laboris do est. Laboris nisi ipsum reprehenderit enim labore officia dolore aliqua dolor enim elit occaecat in voluptate.\r\n",
+        "FavoriteGeneres": "Consectetur sit anim in duis id cupidatat enim ex labore et aute magna.",
+        "FavoriteGames": "Sint amet nisi occaecat excepteur reprehenderit aliquip commodo et aute sint aliqua.",
+        "City": "Bethany",
+        "State": "Louisiana",
+        "ZipCode": 97257,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/women/11.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "eiusmod",
+        "FirstName": "Angelina",
+        "LastName": "Cooper",
+        "Gender": "female",
+        "DateOfBirth": "1998-07-10",
+        "Password": "password",
+        "Created": "2017-01-30",
+        "LastActive": "2017-01-30",
+        "Summary": "Cillum Lorem ut in duis irure ipsum anim anim minim irure eiusmod nisi dolore anim. Consequat cupidatat aliqua ad quis labore adipisicing. Reprehenderit cillum non exercitation irure ea ut. Velit commodo irure commodo ex culpa culpa nulla est ullamco. Aute aliqua labore ullamco eu qui dolore ad culpa elit nisi amet.\r\n",
+        "FavoriteGeneres": "Aute est aliqua voluptate anim.",
+        "FavoriteGames": "Consectetur ea et elit irure Lorem proident non incididunt occaecat sint ullamco aliqua.",
+        "City": "Lemoyne",
+        "State": "New Jersey",
+        "ZipCode": 30396,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/women/11.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "dolore",
+        "FirstName": "Alicia",
+        "LastName": "Miller",
+        "Gender": "female",
+        "DateOfBirth": "1987-01-16",
+        "Password": "password",
+        "Created": "2017-02-03",
+        "LastActive": "2017-02-03",
+        "Summary": "Irure elit sunt laboris qui culpa esse dolor proident id. Consectetur sint quis fugiat sit. Aliquip proident ipsum qui consectetur ex ea consectetur sint. Incididunt esse aute consequat aliquip eu id aute non. Excepteur est exercitation ex esse et dolore fugiat Lorem sit eiusmod. Eu amet reprehenderit elit eu qui. Ea duis labore sit veniam aliqua voluptate elit.\r\n",
+        "FavoriteGeneres": "Eiusmod qui esse ipsum tempor dolor veniam id.",
+        "FavoriteGames": "Consequat ea sint laborum sit qui sint reprehenderit amet Lorem ut ullamco dolore nulla proident.",
+        "City": "Edgar",
+        "State": "Illinois",
+        "ZipCode": 66534,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/women/52.jpg",
+                "isCurrent": true
+            }
+        ]
+    },
+    {
+        "Username": "anim",
+        "FirstName": "Helen",
+        "LastName": "Valencia",
+        "Gender": "female",
+        "DateOfBirth": "1979-02-13",
+        "Password": "password",
+        "Created": "2017-02-12",
+        "LastActive": "2017-02-12",
+        "Summary": "Laborum culpa ipsum sunt commodo non sunt qui irure adipisicing. Ea quis fugiat aliquip ut. Do voluptate Lorem excepteur aute ullamco. Aliquip ea do labore tempor ex eiusmod ipsum irure aute tempor.\r\n",
+        "FavoriteGeneres": "Non ea dolore adipisicing dolore laborum consequat anim reprehenderit id labore reprehenderit consectetur.",
+        "FavoriteGames": "Lorem nulla ea ut eiusmod cillum velit dolor mollit magna occaecat nulla id ea sint.",
+        "City": "Nelson",
+        "State": "Hawaii",
+        "ZipCode": 38713,
+        "ProfilePhotos": [
+            {
+                "url": "https://randomuser.me/api/portraits/women/42.jpg",
+                "isCurrent": true
+            }
+        ]
+    }
+]
