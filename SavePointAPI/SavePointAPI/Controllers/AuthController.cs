@@ -70,29 +70,33 @@ namespace SavePointApp.Controllers
             if (userFromRepo == null)
                 return Unauthorized();
 
-            // Generate JWT
-            var tokenHandler = new JwtSecurityTokenHandler();
+			// Generate security key
+			var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
 
-            // Generate security key
-            var key = Encoding.ASCII.GetBytes(_config.GetSection("AppSettings:Token").Value);
 
-            // Create payload for token
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
-                    new Claim(ClaimTypes.Name, userFromRepo.Username)
-                }),
+			var claims = new[]
+			  {
+				new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
+				new Claim(ClaimTypes.Name, userFromRepo.Username)
+			  };
 
-                // Set expirary date for JWT Token
-                Expires = DateTime.Now.AddDays(1),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
-                SecurityAlgorithms.HmacSha512Signature)
+			// Create new credentials for the signing keys using HMAC encryption
+			var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
+
+			// Create payload for token
+			var tokenDescriptor = new SecurityTokenDescriptor
+			{
+				// Import Claims as the JWT Subject, then set expirary date, then add signing credentials
+				Subject = new ClaimsIdentity(claims),
+				Expires = DateTime.Now.AddDays(1),
+				SigningCredentials = creds
             };
 
-            // Complete generation of token and send
-            var token = tokenHandler.CreateToken(tokenDescriptor);
+			// Generate JWT
+			var tokenHandler = new JwtSecurityTokenHandler();
+
+			// Complete generation of token and send
+			var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
             // Return token as an object

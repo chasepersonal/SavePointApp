@@ -35,7 +35,6 @@ namespace SavePointApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var key = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value);
             // Service for Automapper
             services.AddAutoMapper();
             // Service for connecting to a database
@@ -54,8 +53,10 @@ namespace SavePointApp
             services.AddScoped<IAuthRepository, AuthRepository>();
             // Add scoped injection for Games Repository
             services.AddScoped<IGamesRepository, GamesRepository>();
-            // Add service to allow JWT authentication
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {
+			// Key variable for Issuer Signing Key for authentication service
+			var key = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value);
+			// Add service to allow JWT authentication
+			services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
