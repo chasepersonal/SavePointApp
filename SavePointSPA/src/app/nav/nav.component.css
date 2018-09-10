@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+}
+
 .hidden {
   display: none;
 }

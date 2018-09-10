@@ -2,7 +2,6 @@
   <mat-sidenav
     #drawer
     class="sidenav"
-    [ngClass]="{hidden: !(isHandset$ | async)!.matches}"
     fixedInViewport="false"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -15,20 +14,35 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" *ngIf="!loggedIn()">
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        *ngIf="!(isHandset$ | async)!.matches">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Save Point</span>
+      <span><a [routerLink]="['/home']">Save Point</a></span>
       <span class="left-align"></span>
       <a href="#">Contact</a>
       <a href="#">About</a>
       <a routerLinkActive="active" [routerLink]="['/login']">Login</a>
+    </mat-toolbar>
+    <mat-toolbar color="primary" *ngIf="loggedIn()">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="!(isHandset$ | async)!.matches">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span><a [routerLink]="['/home']">Save Point</a></span>
+      <span class="left-align"></span>
+      <a href="#">Community</a>
+      <a href="#">Games</a>
+      <a routerLinkActive="active" (click)="logout()">Logout</a>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>

@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SavePointApp.Models
 {
@@ -8,8 +9,15 @@ namespace SavePointApp.Models
         // Initialize values for game information
         // Also establish getters and setters
 
+        // Make primary key for this table
         [Key]
-		public int Id { get; set; }
+        public int Id { get; set; }
+		// Tie to User table by making this a foreign key
+		// Will tie to primary key in User table to identify game ownership
+		[ForeignKey("User")]
+		public int UserId { get; set; }
+
+		public virtual User User { get; set; }
 
         public string Title { get; set; }
 
@@ -22,12 +30,6 @@ namespace SavePointApp.Models
         public int Rating { get; set; }
 
         public string Comment { get; set; }
-
-        // User and UserId variable used to define relationship to User table
-        // Association will allow database to cascade changes between the Games and User tables
-        public User User { get; set; }
-
-        public int UserId { get; set; }
 
     }
 }

@@ -18,7 +18,7 @@ const httpOptions = {
 export class UserService {
 
     // Import a base url from the environments
-    baseUrl = environment.apiUrl;
+    baseUrl = 'http://localhost:53721/api/';
     constructor(private http: HttpClient) { }
 
     // Need array in order to return multiple users

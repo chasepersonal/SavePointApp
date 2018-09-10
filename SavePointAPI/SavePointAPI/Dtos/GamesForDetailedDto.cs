@@ -10,14 +10,9 @@ namespace SavePointAPI.Dtos
 {
     public class GamesForDetailedDto
 	{
-		// Make primary key for this table
-		// Tie to User table by making this a foreign key
-		// Will tie to primary key in User table to identify game ownership
-		[Key]
-		[ForeignKey("User")]
-		public int UserID { get; set; }
+		// DTO for detailed games list
 
-		public virtual User User { get; set; }
+		public int Id { get; set; }
 
 		public string Title { get; set; }
 

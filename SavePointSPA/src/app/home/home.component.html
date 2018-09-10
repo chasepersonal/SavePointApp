@@ -1,0 +1,16 @@
+<mat-card *ngIf="!registerMode">
+  <mat-card-content>
+    <h1>Welcome to Save Point!</h1>
+    <p>You can save your games to the cloud and see what others are playing.</p>
+    <p>It's free to register, so sign up today!</p>
+    <p>If you already have an account, go ahead and Login!</p>
+    <mat-card-actions class="button-center">
+      <button mat-raised-button (click)="registerToggle()">Register</button>
+      <button mat-raised-button><a [routerLink]="['/login']">Login</a></button>
+    </mat-card-actions>
+  </mat-card-content>
+</mat-card>
+
+<mat-card *ngIf="registerMode">
+  <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+</mat-card>
