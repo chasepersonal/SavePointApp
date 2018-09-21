@@ -17,6 +17,7 @@ import { AuthService } from './_services/auth.service';
 import { ErrorInterceptor } from './_services/error.interceptor';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { GamesDetailsComponent } from './games-details/games-details.component';
 
 @NgModule({
    declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
       LoginComponent,
       RegisterComponent,
       HomeComponent,
-      GamesComponent
+      GamesComponent,
+      GamesDetailsComponent
    ],
    imports: [
       BrowserModule,
@@ -40,14 +42,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
       FormsModule,
       MatInputModule,
       RouterModule.forRoot(appRoutes),
-      HttpClientModule,
+      HttpClientModule
    ],
    providers: [
-     /* For error handling with forms */
-     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},
-     ErrorInterceptor,
-     AuthService,
-     AlertifyService
+      /*Forerrorhandlingwithforms*/\nprovide
    ],
    bootstrap: [
       AppComponent
