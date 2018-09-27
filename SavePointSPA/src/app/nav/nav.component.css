@@ -4,8 +4,15 @@
   }
 }
 
-.hidden {
-  display: none;
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}
+
+.left-align {
+  flex: 1 1 auto;
 }
 
 .sidenav-container {
@@ -19,10 +26,6 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-}
-
-.left-align {
-  flex: 1 1 auto;
 }
 
 mat-toolbar a {

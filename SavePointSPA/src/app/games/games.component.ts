@@ -20,5 +20,5 @@ export class GamesComponent implements OnInit {
     this.data.getGames().subscribe(data => {
       this.games$ = data;
     });
-
+  }
 }

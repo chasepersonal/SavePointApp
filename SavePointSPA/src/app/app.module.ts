@@ -16,8 +16,10 @@ import { RouterModule } from '@angular/router';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptor } from './_services/error.interceptor';
 import { RegisterComponent } from './register/register.component';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { GamesDetailsComponent } from './games-details/games-details.component';
+import { GamesService } from './_services/games.service';
+import { UserService } from './_services/user.service';
 
 @NgModule({
    declarations: [
@@ -45,7 +47,11 @@ import { GamesDetailsComponent } from './games-details/games-details.component';
       HttpClientModule
    ],
    providers: [
-      /*Forerrorhandlingwithforms*/\nprovide
+     AuthService,
+     AlertifyService,
+     GamesService,
+     UserService,
+     ErrorInterceptor
    ],
    bootstrap: [
       AppComponent

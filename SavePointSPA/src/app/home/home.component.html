@@ -1,3 +1,4 @@
+<div class="container">
 <mat-card *ngIf="!registerMode">
   <mat-card-content>
     <h1>Welcome to Save Point!</h1>
@@ -14,3 +15,4 @@
 <mat-card *ngIf="registerMode">
   <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
 </mat-card>
+</div>
