@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GamesDetailsComponent } from './games-details/games-details.component';
 import { GamesService } from './_services/games.service';
 import { UserService } from './_services/user.service';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
    declarations: [
@@ -29,7 +30,8 @@ import { UserService } from './_services/user.service';
       RegisterComponent,
       HomeComponent,
       GamesComponent,
-      GamesDetailsComponent
+      GamesDetailsComponent,
+      UserListComponent
    ],
    imports: [
       BrowserModule,
@@ -47,11 +49,11 @@ import { UserService } from './_services/user.service';
       HttpClientModule
    ],
    providers: [
-     AuthService,
-     AlertifyService,
-     GamesService,
-     UserService,
-     ErrorInterceptor
+      AuthService,
+      AlertifyService,
+      GamesService,
+      UserService,
+      ErrorInterceptor
    ],
    bootstrap: [
       AppComponent

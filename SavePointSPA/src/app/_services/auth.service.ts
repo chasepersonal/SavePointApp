@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class AuthService {
 
     constructor(private http: HttpClient) {}
     // Call API location for authorization
-    baseUrl = 'http://localhost:53721/api/auth/';
+    baseUrl = environment.apiUrl;
 
     // Store decoded user token for parsing purposes
     decodedToken: any;
