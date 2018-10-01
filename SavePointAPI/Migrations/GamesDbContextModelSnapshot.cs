@@ -81,6 +81,8 @@ namespace SavePointAPI.Migrations
 
                     b.Property<string>("Gender");
 
+                    b.Property<string>("KnownAs");
+
                     b.Property<DateTime>("LastActive");
 
                     b.Property<string>("LastName");

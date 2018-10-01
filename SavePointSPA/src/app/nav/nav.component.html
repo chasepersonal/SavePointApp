@@ -7,14 +7,19 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">Menu</mat-toolbar>
-    <mat-nav-list>
+    <mat-nav-list *ngIf="!loggedIn()">
       <a mat-list-item href="#">Contact</a>
       <a mat-list-item href="#">About</a>
-      <a mat-list-item href="#" routerLinkActive="active" [routerLink]="['/login']">Login</a>
+      <a mat-list-item routerLinkActive="active" [routerLink]="['/login']">Login</a>
+    </mat-nav-list>
+    <mat-nav-list *ngIf="loggedIn()">
+      <a mat-list-item [routerLink]="['/user-list']">Community</a>
+      <a mat-list-item [routerLink]="['/games']">Games</a>
+      <a mat-list-item routerLinkActive="active" (click)="logout()">Logout</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" *ngIf="!loggedIn()">
+    <mat-toolbar color="primary">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -25,26 +30,16 @@
       </button>
       <span><a [routerLink]="['/home']">Save Point</a></span>
       <span class="left-align"></span>
-      <span class="links">
+      <span class="links" *ngIf="!loggedIn()">
           <a href="#">Contact</a>
           <a href="#">About</a>
           <a routerLinkActive="active" [routerLink]="['/login']">Login</a>
       </span>
-    </mat-toolbar>
-    <mat-toolbar color="primary" *ngIf="loggedIn()">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon"></mat-icon>
-      </button>
-      <span><a [routerLink]="['/home']">Save Point</a></span>
-      <span class="left-align"></span>
-      <a href="#">Community</a>
-      <a href="#">Games</a>
-      <a routerLinkActive="active" (click)="logout()">Logout</a>
+      <span class="links" *ngIf="loggedIn()">
+        <a [routerLink]="['/user-list']">Community</a>
+        <a [routerLink]="['/games']">Games</a>
+        <a routerLinkActive="active" (click)="logout()">Logout</a>
+      </span>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>

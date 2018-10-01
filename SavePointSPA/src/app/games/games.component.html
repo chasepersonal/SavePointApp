@@ -2,6 +2,5 @@
   <mat-card-title>{{g.title}}</mat-card-title>
   <mat-card-content>{{g.console}}</mat-card-content>
   <mat-card-content>{{g.genre}}</mat-card-content>
-  <mat-card-content>{{g.summary}}</mat-card-content>
-  <mat-card-content>{{g.releaseDate}}</mat-card-content>
+  <mat-card-content><a [routerLink]="['/games', g.id]">View More Details</a></mat-card-content>
 </mat-card>

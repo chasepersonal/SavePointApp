@@ -9,7 +9,7 @@ using SavePointAPI.Data;
 namespace SavePointAPI.Migrations
 {
     [DbContext(typeof(GamesDbContext))]
-    [Migration("20181001023748_InitialCreate")]
+    [Migration("20181001224947_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -82,6 +82,8 @@ namespace SavePointAPI.Migrations
                     b.Property<string>("FirstName");
 
                     b.Property<string>("Gender");
+
+                    b.Property<string>("KnownAs");
 
                     b.Property<DateTime>("LastActive");
 

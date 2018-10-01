@@ -3,7 +3,6 @@ export interface Games {
     title: string;
     console: string;
     genre: string;
-    summary: string;
     releaseDate?: string;
     rating: string;
     comment: string;

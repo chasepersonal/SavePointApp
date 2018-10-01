@@ -25,6 +25,8 @@ namespace SavePointAPI.Models
 
         public DateTime DateOfBirth { get; set; }
 
+        public string KnownAs { get; set; }
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

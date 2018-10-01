@@ -24,9 +24,9 @@ namespace SavePointAPI.Helpers
 
             CreateMap<User, UserForDetailedDto>()
                 .ForMember(dest => dest.ProfilePhotoUrl, opt =>
-            {
-                opt.MapFrom(src => src.ProfilePhotos.FirstOrDefault(p => p.IsCurrent).Url);
-            });
+                {
+                    opt.MapFrom(src => src.ProfilePhotos.FirstOrDefault(p => p.IsCurrent).Url);
+                });
 
             CreateMap<User, PhotosForDetailedDto>();
         }

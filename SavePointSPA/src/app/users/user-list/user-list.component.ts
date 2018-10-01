@@ -1,7 +1,7 @@
-import { AlertifyService } from './../_services/alertify.service';
+import { AlertifyService } from './../../_services/alertify.service';
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../_services/user.service';
-import { User } from '../_models/user';
+import { UserService } from '../../_services/user.service';
+import { User } from '../../_models/user';
 
 @Component({
   selector: 'app-user-list',
@@ -15,6 +15,7 @@ export class UserListComponent implements OnInit {
   constructor(private data: UserService, private alertify: AlertifyService) { }
 
   ngOnInit() {
+    this.loadUsers();
   }
 
   loadUsers() {
