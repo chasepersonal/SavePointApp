@@ -1,4 +1,4 @@
-﻿using SavePointAPI.Models;
+using SavePointAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 namespace SavePointAPI.Dtos
 {
     public class GamesForDetailedDto
-	{
-		// DTO for detailed games list
+    {
+        // DTO for detailed games list
 
 		public int Id { get; set; }
 
@@ -29,5 +29,5 @@ namespace SavePointAPI.Dtos
 		public DateTime Created { get; set; }
 
 		public DateTime LastUpdate { get; set; }
-	}
+    }
 }

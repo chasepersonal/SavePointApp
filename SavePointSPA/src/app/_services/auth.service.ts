@@ -27,7 +27,7 @@ export class AuthService {
         // Will be returned as an observable as type response (token object)
         // Will need to transform response into data that can be read by the browser (done with .map() operator)
         // Pass Headers through reference by calling this.requestOptions()
-        return this.http.post(this.baseUrl + 'login', model).pipe(map((response: any)  => {
+        return this.http.post(this.baseUrl + 'auth/login', model).pipe(map((response: any)  => {
             const user = response;
 
             if (user) {
@@ -52,6 +52,6 @@ export class AuthService {
 
         // Return the reference of the HTTP post that will contain the registration information
         // Catch any errors that might arise from any errors to the register page
-        return this.http.post(this.baseUrl + 'register', model);
+        return this.http.post(this.baseUrl + 'auth/register', model);
     }
 }

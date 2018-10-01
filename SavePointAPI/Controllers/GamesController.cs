@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 using SavePointAPI.Data;
 
 namespace SavePointAPI.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
+    [ApiController]
     public class GamesController : Controller
     {
         // Create Database context value for performing database requests

@@ -4,7 +4,7 @@ export interface Games {
     console: string;
     genre: string;
     summary: string;
-    releaseYear?: string;
+    releaseDate?: string;
     rating: string;
     comment: string;
 }

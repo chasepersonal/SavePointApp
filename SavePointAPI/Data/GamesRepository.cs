@@ -9,7 +9,6 @@ namespace SavePointAPI.Data
 {
     public class GamesRepository : IGamesRepository
     {
-
         private readonly GamesDbContext _context;
 
         public GamesRepository(GamesDbContext context)

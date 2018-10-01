@@ -1,7 +1,7 @@
-<mat-card class="container">
-  <mat-card-title>{{games$.title}}</mat-card-title>
-  <mat-card-content>{{games$.console}}</mat-card-content>
-  <mat-card-content>{{games$.genre}}</mat-card-content>
-  <mat-card-content>{{games$.summary}}</mat-card-content>
-  <mat-card-content>{{games$.releaseYear}}</mat-card-content>
+<mat-card class="container" *ngFor="let g of games$">
+  <mat-card-title>{{g.title}}</mat-card-title>
+  <mat-card-content>{{g.console}}</mat-card-content>
+  <mat-card-content>{{g.genre}}</mat-card-content>
+  <mat-card-content>{{g.summary}}</mat-card-content>
+  <mat-card-content>{{g.releaseDate}}</mat-card-content>
 </mat-card>

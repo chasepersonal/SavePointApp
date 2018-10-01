@@ -58,6 +58,5 @@ namespace SavePointAPI.Models
             ProfilePhotos = new Collection<Photo>();
             Games = new Collection<Games>();
         }
-
     }
 }

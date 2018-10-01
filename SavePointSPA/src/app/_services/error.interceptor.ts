@@ -12,6 +12,10 @@ export class ErrorInterceptor implements HttpInterceptor {
       catchError(error => {
         // If errors arise from API, send an error message as a header back
         if (error instanceof HttpErrorResponse) {
+          // If HTTP returns a 401 response, add an error with status text
+          if (error.status === 401) {
+            return throwError(error.statusText);
+          }
           const applicationError = error.headers.get('Application-Error');
           if (applicationError) {
             return throwError(applicationError);

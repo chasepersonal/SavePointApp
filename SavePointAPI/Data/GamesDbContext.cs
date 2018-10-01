@@ -22,5 +22,4 @@ namespace SavePointAPI.Data
         // Set table for profile photos
         public DbSet<Photo> ProfilePhotos { get; set; }
     }
-
 }

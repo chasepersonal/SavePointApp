@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -95,9 +95,9 @@ namespace SavePointAPI
 
             }
             // Seed user data to the database
-            //seeder.SeedUsers();
+            seeder.SeedUsers();
+
             // Import Cors headers for use in application
-            // User First
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             // Serve static files from the wwwroot folder for Angular
             app.UseDefaultFiles();

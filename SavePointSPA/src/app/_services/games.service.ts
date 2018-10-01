@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Games } from '../_models/games';
+import { environment } from '../../environments/environment';
 
 // Create a variable to add JWT token to the HTTP headers
 const httpOptions = {
@@ -17,7 +18,7 @@ const httpOptions = {
 export class GamesService {
 
   // Import a base url from the environments
-  baseUrl = 'http://localhost:53721/api/';
+  baseUrl = environment.apiUrl;
   constructor(private http: HttpClient) { }
 
   // Need array in order to return multiple users

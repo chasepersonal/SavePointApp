@@ -16,7 +16,8 @@ using SavePointAPI.Models;
 namespace SavePointApp.Controllers
 {
     [Route("api/[controller]")]
-    public class AuthController : Controller
+    [ApiController]
+    public class AuthController : ControllerBase
     {
         // Initialize auth repository context
         private readonly IAuthRepository _repo;
@@ -32,7 +33,7 @@ namespace SavePointApp.Controllers
 
         [HttpPost("register")]
         // Tell API to look into the body to get the information it needs
-        public async Task<IActionResult> Register([FromBody]UserForRegisterDto userForRegisterDto)
+        public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
             // Convert username to lowercase string as long as their was a username passed
             // Eilminates case sensitivity
@@ -60,7 +61,7 @@ namespace SavePointApp.Controllers
 
         
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody]UserForLoginDto userForLoginDto)
+        public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
 
             var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);

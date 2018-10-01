@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace SavePointAPI.Helpers
 {
-    // Make static so it can only be accessed by this class
-
     public static class Extensions
     {
-        // Create a custom HTTP response message
+       // Create a custom HTTP response message
         public static void AddApplicationError(this HttpResponse response, string message)
         {
             // Add a header for the custom HTTP response message
@@ -21,6 +19,6 @@ namespace SavePointAPI.Helpers
 
             // Allow any origin to access this message
             response.Headers.Add("Access-Control-Allow-Origin", "*");
-        }
+        } 
     }
 }

@@ -28,6 +28,5 @@ namespace SavePointAPI.Data
         Task<IEnumerable<Games>> GetGames();
 
         Task<Games> GetGame(int id);
-
     }
 }
