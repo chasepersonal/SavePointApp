@@ -9,4 +9,6 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
     margin: 20px auto;
     width: 75%;
     text-align: center;
+    /* for image overflow */
+    overflow: hidden;
 }

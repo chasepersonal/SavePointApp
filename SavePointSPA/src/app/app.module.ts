@@ -47,6 +47,7 @@ import { UserCardComponent } from './users/user-card/user-card.component';
       MatListModule,
       MatCardModule,
       FormsModule,
+      MatIconModule,
       MatInputModule,
       RouterModule.forRoot(appRoutes),
       HttpClientModule

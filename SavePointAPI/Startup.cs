@@ -95,7 +95,7 @@ namespace SavePointAPI
 
             }
             // Seed user data to the database
-            seeder.SeedUsers();
+            // seeder.SeedUsers();
 
             // Import Cors headers for use in application
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());

@@ -1,0 +1,18 @@
+/* hover state */
+.card:hover img {
+    /* transform image to scale to 1.2 of its original size on x & y axis */
+    transform: scale(1.2, 1.2);
+    /* take 500ms to transition between state */
+    transition-duration: 500ms;
+    /* use ease-out during the transition */
+    transition-timing-function: ease-out;
+    /* add opacity on transition */
+    opacity: 0.7;
+}
+
+/* original state */
+.card img {
+    transform: scale(1.0, 1.0);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}

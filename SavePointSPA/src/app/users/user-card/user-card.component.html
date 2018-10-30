@@ -1,11 +1,14 @@
-<mat-card class="container">
-  <mat-card-title>
-    <img mat-card-md-image src="{{user.profilePhotoUrl}}" alt="{{user.knownAs}}">
-  </mat-card-title>
-  <mat-card-content>
-    <p>{{user.knownAs}}</p>
-    <p>{{user.age}}</p>
-    <p>{{user.city}}</p>
-    <p>{{user.state}}</p>
-  </mat-card-content>
-</mat-card>
+<div class="container">
+  <mat-card class="card">
+    <mat-card-title>
+      <img mat-card-md-image src="{{user.profilePhotoUrl}}" alt="{{user.knownAs}}">
+      <p><button mat-raised-button color="primary"><mat-icon>person</mat-icon></button></p>
+      <p><button mat-raised-button color="primary"><mat-icon>message</mat-icon></button></p>
+    </mat-card-title>
+    <mat-card-content>
+      <p>{{user.knownAs}}</p>
+      <p>{{user.city}}</p>
+      <p>{{user.state}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
