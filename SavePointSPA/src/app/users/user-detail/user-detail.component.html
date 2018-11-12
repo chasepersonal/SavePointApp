@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-card class="card">
+    <mat-card-title>
+        <img mat-card-md-image src="{{user?.profilePhotoUrl}}" alt="{{user?.knownAs}}">
+    </mat-card-title>
+    <mat-card-content>
+        <p>{{user?.knownAs}}</p>
+        <p>{{user?.city}}, {{user?.state}}</p>
+        <p>{{user?.summary}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

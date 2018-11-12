@@ -1,3 +1,4 @@
+import { UserDetailComponent } from './users/user-detail/user-detail.component';
 import { AlertifyService } from './_services/alertify.service';
 import { GamesComponent } from './games/games.component';
 import { HomeComponent } from './home/home.component';
@@ -23,7 +24,11 @@ import { UserService } from './_services/user.service';
 import { UserListComponent } from './users/user-list/user-list.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { UserCardComponent } from './users/user-card/user-card.component';
+import { JwtModule } from '@auth0/angular-jwt';
 
+export function tokenGetter() {
+  return localStorage.getItem('token');
+}
 @NgModule({
    declarations: [
       AppComponent,
@@ -34,7 +39,8 @@ import { UserCardComponent } from './users/user-card/user-card.component';
       GamesComponent,
       GamesDetailsComponent,
       UserListComponent,
-      UserCardComponent
+      UserCardComponent,
+      UserDetailComponent
    ],
    imports: [
       BrowserModule,
@@ -50,7 +56,14 @@ import { UserCardComponent } from './users/user-card/user-card.component';
       MatIconModule,
       MatInputModule,
       RouterModule.forRoot(appRoutes),
-      HttpClientModule
+      HttpClientModule,
+      JwtModule.forRoot({
+        config: {
+          tokenGetter: tokenGetter,
+          whitelistedDomains: ['localhost:5000'],
+          blacklistedRoutes: ['localhost:5000/api/auth']
+        }
+      }),
    ],
    providers: [
       AuthService,
